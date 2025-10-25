@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9ebee;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 30rem;
+    margin-top: 8rem;
+    border: rgba (0, 0, 0, 08);
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+}
+.page p{
+ color: rgba(0, 0, 0, 0.497);
+}
+
+.titre {
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 2.5rem;
+}
+
+.prenom {
+    margin-right: 1rem;
+
+}
+
+.email {
+    margin-top: 2rem;
+    grid-column: span 2;
+
+}
+
+.motdepasse {
+    margin-top: 2rem;
+    grid-column: span 2;
+
+}
+
+.date {
+    grid-column: span 2;
+    margin-top: 1rem;
+     color: rgba(0, 0, 0, 0.497);
+}
+
+.genre {
+    grid-column: span 2;
+    margin-top: 1rem;
+     color: rgba(0, 0, 0, 0.497);
+}
+
+section {
+    grid-column: span 2;
+}
+
+.fin {
+    margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.478);
+}
+
+button {
+    background: #42b72a;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2rem;
+    width: 100%;
+    height: 3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+input {
+    border-radius: 5px;
+    padding: 1rem;
+    border: 1px solid;
+    font-size: 1rem;
+ color: rgba(0, 0, 0, 0.497);
+
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+.genres {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.type {
+    border: 1px solid;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 7rem;
+    font-size: 1rem;
+}
+
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 8.125rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.042);
+   
+}
+
+select:focus {
+    outline: 1px solid black;
+}
+
+a {
+    color: #1877f2;
+  text-decoration: none;
+}
+a:hover{
+    color: #1877f2;
+    text-decoration: underline;
+}
+.radio:focus {
+    outline: none;
+}
+
+
+@media (max-width: 768px) {
+    .page {
+    display: flex;
+    flex-direction: column;
+}
+
+.genres {
+    display: flex;
+   flex-direction: column;
+   row-gap: 0.5rem;
+}
+
+.dates {
+    display: flex;
+   flex-direction: column;
+   row-gap: 0.5rem;
+}
+
+.prenom {
+    margin-right: 0;
+
+}
+.nomfamille{
+    margin-top: 1rem;
+}
+.email {
+    margin-top: 2rem;
+    grid-column: span 2;
+
+}
+
+.motdepasse {
+    margin-top: 1rem;
+    grid-column: span 2;
+
+}
+
+.type {
+  width: 50%;
+}
+select{
+    width: 100%;
+}
+}
