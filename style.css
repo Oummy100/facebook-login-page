@@ -11,7 +11,7 @@ body {
     background: #e9ebee;
 }
 
-.page {
+form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 30rem;
@@ -21,8 +21,9 @@ body {
     padding: 2rem;
     border-radius: 15px;
 }
-.page p{
- color: rgba(0, 0, 0, 0.497);
+
+form p {
+    color: rgba(0, 0, 0, 0.497);
 }
 
 .titre {
@@ -51,13 +52,13 @@ body {
 .date {
     grid-column: span 2;
     margin-top: 1rem;
-     color: rgba(0, 0, 0, 0.497);
+    color: rgba(0, 0, 0, 0.497);
 }
 
 .genre {
     grid-column: span 2;
     margin-top: 1rem;
-     color: rgba(0, 0, 0, 0.497);
+    color: rgba(0, 0, 0, 0.497);
 }
 
 section {
@@ -86,7 +87,7 @@ input {
     padding: 1rem;
     border: 1px solid;
     font-size: 1rem;
- color: rgba(0, 0, 0, 0.497);
+    color: rgba(0, 0, 0, 0.497);
 
 }
 
@@ -120,7 +121,7 @@ select {
     width: 8.125rem;
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.042);
-   
+
 }
 
 select:focus {
@@ -129,58 +130,63 @@ select:focus {
 
 a {
     color: #1877f2;
-  text-decoration: none;
+    text-decoration: none;
 }
-a:hover{
+
+a:hover {
     color: #1877f2;
     text-decoration: underline;
 }
+
 .radio:focus {
     outline: none;
 }
 
 
 @media (max-width: 768px) {
-    .page {
-    display: flex;
-    flex-direction: column;
-}
+    form {
+        display: flex;
+        flex-direction: column;
+    }
 
-.genres {
-    display: flex;
-   flex-direction: column;
-   row-gap: 0.5rem;
-}
+    .genres {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
 
-.dates {
-    display: flex;
-   flex-direction: column;
-   row-gap: 0.5rem;
-}
+    .dates {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+    }
 
-.prenom {
-    margin-right: 0;
+    .prenom {
+        margin-right: 0;
 
-}
-.nomfamille{
-    margin-top: 1rem;
-}
-.email {
-    margin-top: 2rem;
-    grid-column: span 2;
+    }
 
-}
+    .nomfamille {
+        margin-top: 1rem;
+    }
 
-.motdepasse {
-    margin-top: 1rem;
-    grid-column: span 2;
+    .email {
+        margin-top: 2rem;
+        grid-column: span 2;
 
-}
+    }
 
-.type {
-  width: 50%;
-}
-select{
-    width: 100%;
-}
+    .motdepasse {
+        margin-top: 1rem;
+        grid-column: span 2;
+
+    }
+
+    .type {
+        width: 50%;
+    }
+
+    select {
+        width: 100%;
+    }
 }
