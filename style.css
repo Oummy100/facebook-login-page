@@ -143,8 +143,8 @@ a:hover {
     outline: none;
 }
 
-label:hover{
-cursor: pointer;
+label:hover {
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
